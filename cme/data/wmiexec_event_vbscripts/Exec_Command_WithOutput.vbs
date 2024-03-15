@@ -84,7 +84,7 @@ Function FileExists(FilePath)
 End Function
 
 Function Base64StringDecode(ByVal vCode)
-    Set oXML = CreateObject("Msxml2.DOMDocument")
+    Set oXML = CreateObject("Msxml2.DOMDocument.3.0")
     Set oNode = oXML.CreateElement("base64")
     oNode.dataType = "bin.base64"
     oNode.text = vCode
